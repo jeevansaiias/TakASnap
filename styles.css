@@ -342,3 +342,17 @@ main {
         padding: 2rem 1rem;
     }
 }
+
+/* Page-specific tweaks */
+body.about-page main {
+    margin-top: 150px;
+    padding-top: 3rem;
+}
+
+body.portraits-page .empty-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+}
