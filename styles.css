@@ -289,8 +289,8 @@ main {
     }
 
     .logo h1 {
-        font-size: 1.4rem;
-        margin-bottom: 1.1rem;
+        font-size: 1.6rem;
+        margin-bottom: 1.25rem;
     }
 
     .nav-menu {
@@ -319,8 +319,8 @@ main {
     }
 
     main {
-        padding: 2.5rem 1.3rem 2.7rem;
-        margin-top: 160px;
+        padding: 2.6rem 1.35rem 2.8rem;
+        margin-top: 185px;
     }
 }
 
