@@ -48,7 +48,7 @@ nav {
     margin-bottom: 2rem;
     cursor: pointer;
     font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
-    color: #999;
+    color: #222024;
 }
 
 .nav-menu {
@@ -62,7 +62,7 @@ nav {
 
 .nav-link {
     text-decoration: none;
-    color: #999;
+    color: #222024;
     font-size: 0.8rem;
     letter-spacing: 2.5px;
     transition: color 0.3s ease;
@@ -73,7 +73,7 @@ nav {
 
 .nav-link:hover,
 .nav-link.active {
-    color: #000;
+    color: #222024;
 }
 
 .hamburger {
