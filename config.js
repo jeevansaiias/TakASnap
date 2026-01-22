@@ -41,13 +41,6 @@ const portfolioConfig = {
                 { src: 'images/web/companions/DSC01759.jpeg', title: 'COMPANION' }
             ]
         },
-        portraits: {
-            name: "PORTRAITS",
-            active: true,
-            images: [
-                // Add your portrait photos here
-            ]
-        },
         urban: {
             name: "URBAN",
             active: true,
@@ -60,6 +53,13 @@ const portfolioConfig = {
             active: true,
             images: [
                 // Add your nature/macro photos here
+            ]
+        },
+        portraits: {
+            name: "PORTRAITS",
+            active: true,
+            images: [
+                // Add your portrait photos here
             ]
         }
     },
