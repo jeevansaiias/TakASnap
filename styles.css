@@ -93,6 +93,15 @@ nav {
     text-decoration: none;
 }
 
+.nav-hint {
+    display: none;
+}
+
+@keyframes pulseHint {
+    0%, 100% { transform: translateX(0); opacity: 0.78; }
+    50% { transform: translateX(-2px); opacity: 1; }
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -276,12 +285,12 @@ main {
 }
 @media (max-width: 768px) {
     header {
-        padding: 1.6rem 0 1.05rem;
+        padding: 1.75rem 0 1.25rem;
     }
 
     .logo h1 {
         font-size: 1.4rem;
-        margin-bottom: 1.1rem;
+        margin-bottom: 1.2rem;
     }
 
     .nav-menu {
@@ -291,14 +300,14 @@ main {
         background-color: transparent;
         width: 100%;
         text-align: left;
-        padding: 0.6rem 1rem 0.5rem;
+        padding: 0.7rem 1rem 0.65rem;
         border-top: 1px solid #f0f0f0;
         gap: 1rem;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
         scrollbar-width: none;
-        margin-top: 0.4rem;
-        margin-bottom: 0.8rem;
+        margin-top: 0.8rem;
+        margin-bottom: 1rem;
     }
 
     .nav-menu::-webkit-scrollbar { display: none; }
@@ -307,9 +316,9 @@ main {
     nav::after {
         content: '';
         position: absolute;
-        top: calc(100% + 4px);
-        width: 32px;
-        height: 38px;
+        top: calc(100% + 2px);
+        width: 34px;
+        height: 42px;
         pointer-events: none;
         z-index: 2;
     }
@@ -324,6 +333,28 @@ main {
         background: linear-gradient(270deg, #ffffff 0%, rgba(255,255,255,0) 85%);
     }
 
+    .nav-hint {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        position: absolute;
+        right: 1rem;
+        top: calc(100% + 12px);
+        padding: 6px 10px;
+        border-radius: 12px;
+        background: rgba(0, 0, 0, 0.04);
+        color: #6b6d72;
+        font-size: 0.72rem;
+        letter-spacing: 1px;
+        backdrop-filter: blur(4px);
+        box-shadow: 0 8px 18px rgba(0,0,0,0.06);
+        animation: pulseHint 2.2s ease-in-out infinite;
+    }
+
+    .nav-hint .chevron {
+        font-size: 0.9rem;
+    }
+
     .gallery-grid {
         column-count: 1;
         column-gap: 24px;
@@ -334,8 +365,8 @@ main {
     }
 
     main {
-        padding: 2.2rem 1.25rem 2.5rem;
-        margin-top: 140px;
+        padding: 2.4rem 1.25rem 2.6rem;
+        margin-top: 155px;
     }
 }
 
