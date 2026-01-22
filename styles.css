@@ -276,39 +276,66 @@ main {
 }
 @media (max-width: 768px) {
     header {
-        padding: 1.5rem 0 1rem;
+        padding: 1.6rem 0 1.05rem;
     }
 
     .logo h1 {
         font-size: 1.4rem;
-        margin-bottom: 1rem;
+        margin-bottom: 1.1rem;
     }
 
     .nav-menu {
-        position: static;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+        position: relative;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
         background-color: transparent;
         width: 100%;
-        text-align: center;
-        padding: 0.75rem 1rem 0.25rem;
+        text-align: left;
+        padding: 0.6rem 1rem 0.5rem;
         border-top: 1px solid #f0f0f0;
-        gap: 1rem 1.5rem;
+        gap: 1rem;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        margin-top: 0.4rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .nav-menu::-webkit-scrollbar { display: none; }
+
+    nav::before,
+    nav::after {
+        content: '';
+        position: absolute;
+        top: calc(100% + 4px);
+        width: 32px;
+        height: 38px;
+        pointer-events: none;
+        z-index: 2;
+    }
+
+    nav::before {
+        left: 0;
+        background: linear-gradient(90deg, #ffffff 0%, rgba(255,255,255,0) 85%);
+    }
+
+    nav::after {
+        right: 0;
+        background: linear-gradient(270deg, #ffffff 0%, rgba(255,255,255,0) 85%);
     }
 
     .gallery-grid {
-        column-count: 2;
-        column-gap: 30px;
+        column-count: 1;
+        column-gap: 24px;
     }
 
     .gallery-item {
-        margin-bottom: 30px;
+        margin-bottom: 28px;
     }
 
     main {
-        padding: 2rem 1.5rem;
-        margin-top: 120px;
+        padding: 2.2rem 1.25rem 2.5rem;
+        margin-top: 140px;
     }
 }
 
