@@ -50,6 +50,14 @@ nav {
     font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
     color: #27292B;
 }
+.logo a {
+    color: inherit;
+    text-decoration: none;
+}
+.logo a:focus-visible {
+    outline: 2px solid #27292B;
+    outline-offset: 4px;
+}
 
 .nav-menu {
     display: flex;
@@ -65,7 +73,7 @@ nav {
     color: #222024;
     font-size: 0.8rem;
     letter-spacing: 2.5px;
-    transition: color 0.3s ease;
+    transition: color 0.25s ease;
     font-weight: 400;
     text-transform: uppercase;
     font-family: 'Lato', sans-serif;
@@ -73,7 +81,7 @@ nav {
 
 .nav-link:hover,
 .nav-link.active {
-    color: #222024;
+    color: #4a4c50;
 }
 
 .hamburger {
