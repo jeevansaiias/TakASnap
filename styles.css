@@ -13,9 +13,9 @@ html {
 }
 
 body {
-    font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Manrope', 'Helvetica Neue', Arial, sans-serif;
     background-color: #ffffff;
-    color: #000;
+    color: #1f1f1f;
     line-height: 1.6;
     overflow-x: hidden;
     min-height: 100vh;
@@ -42,12 +42,13 @@ nav {
 }
 
 .logo h1 {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     font-weight: 600;
     letter-spacing: 3px;
-    margin-bottom: 1.1rem;
+    margin-bottom: 1.2rem;
     cursor: pointer;
-    font-family: 'Manrope', 'Lato', sans-serif;
+    font-family: 'Manrope', 'Helvetica Neue', Arial, sans-serif;
+    text-transform: uppercase;
 }
 
 .nav-menu {
@@ -61,13 +62,13 @@ nav {
 
 .nav-link {
     text-decoration: none;
-    color: #1f1f1f;
-    font-size: 1.2rem;
-    letter-spacing: 1.6px;
+    color: #2a2a2a;
+    font-size: 1.3rem;
+    letter-spacing: 1.4px;
     transition: color 0.3s ease;
     font-weight: 400;
     text-transform: uppercase;
-    font-family: 'Manrope', 'Lato', sans-serif;
+    font-family: 'Manrope', 'Helvetica Neue', Arial, sans-serif;
     padding-bottom: 0.3rem;
     border-bottom: 2px solid transparent;
     text-underline-offset: 6px;
@@ -266,8 +267,8 @@ main {
     }
 
     .logo h1 {
-        font-size: 1.55rem;
-        margin-bottom: 0.8rem;
+        font-size: 1.6rem;
+        margin-bottom: 0.85rem;
     }
 
     .nav-menu {
