@@ -30,6 +30,7 @@ header {
     z-index: 1000;
     text-align: center;
     padding: 2rem 0 1rem;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
 }
 
 nav {
@@ -38,10 +39,10 @@ nav {
 }
 
 .logo h1 {
-    font-size: 2.7rem;
+    font-size: 2.4rem;
     font-weight: 500;
-    letter-spacing: 6px;
-    margin-bottom: 2rem;
+    letter-spacing: 4px;
+    margin-bottom: 1.5rem;
     cursor: pointer;
     font-family: 'Playfair Display', serif;
 }
@@ -57,17 +58,20 @@ nav {
 .nav-link {
     text-decoration: none;
     color: #999;
-    font-size: 0.8rem;
-    letter-spacing: 2.5px;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
     transition: color 0.3s ease;
     font-weight: 400;
     text-transform: uppercase;
     font-family: 'Lato', sans-serif;
+    padding-bottom: 0.35rem;
+    border-bottom: 2px solid transparent;
 }
 
 .nav-link:hover,
 .nav-link.active {
     color: #000;
+    border-bottom-color: #000;
 }
 
 .hamburger {
@@ -121,7 +125,10 @@ main {
     overflow: hidden;
     cursor: pointer;
     break-inside: avoid;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    background: #fff;
 }
 
 .gallery-item img {
@@ -253,46 +260,31 @@ main {
 }
 @media (max-width: 768px) {
     header {
-        padding: 1.5rem 0 1rem;
+        padding: 1.25rem 0 0.75rem;
     }
 
     .logo h1 {
-        font-size: 1.4rem;
-        margin-bottom: 1rem;
+        font-size: 1.3rem;
+        margin-bottom: 0.75rem;
     }
 
     .nav-menu {
-        position: static;
+        position: relative;
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
         background-color: transparent;
         width: 100%;
-        text-align: center;
-        padding: 0.75rem 1rem 0.25rem;
+        text-align: left;
+        padding: 0.5rem 1rem 0.6rem;
         border-top: 1px solid #f0f0f0;
-        gap: 1rem 1.5rem;
+        gap: 1.25rem;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
     }
 
-    .nav-menu.active {
-        left: 0;
-    }
-
-    .hamburger {
-        display: none;
-    }
-
-    .hamburger.active span:nth-child(1) {
-        transform: rotate(45deg) translate(7px, 7px);
-    }
-
-    .hamburger.active span:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active span:nth-child(3) {
-        transform: rotate(-45deg) translate(7px, -7px);
-    }
+    .nav-menu::-webkit-scrollbar { display: none; }
 
     .gallery-grid {
         column-count: 2;
@@ -304,8 +296,8 @@ main {
     }
 
     main {
-        padding: 2rem 1.5rem;
-        margin-top: 120px;
+        padding: 1.75rem 1.25rem 2.5rem;
+        margin-top: 110px;
     }
 }
 
@@ -320,10 +312,10 @@ main {
     }
 
     .gallery-item {
-        margin-bottom: 20px;
+        margin-bottom: 24px;
     }
 
     main {
-        padding: 2rem 1rem;
+        padding: 1.5rem 1rem 2rem;
     }
 }
