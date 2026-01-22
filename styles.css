@@ -29,7 +29,7 @@ header {
     background-color: #ffffff;
     z-index: 1000;
     text-align: center;
-    padding: 2.1rem 0 1rem;
+    padding: 2.3rem 0 1.15rem;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
 }
 
@@ -38,13 +38,14 @@ nav {
     margin: 0 auto;
     position: relative;
     padding: 0 1rem;
+    row-gap: 0.6rem;
 }
 
 .logo h1 {
-    font-size: 2.5rem;
+    font-size: 2.55rem;
     font-weight: 500;
     letter-spacing: 4.5px;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.35rem;
     cursor: pointer;
     font-family: 'Playfair Display', serif;
 }
@@ -52,22 +53,24 @@ nav {
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: 3.2rem;
+    gap: 3.4rem;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 1.8rem;
 }
 
 .nav-link {
     text-decoration: none;
-    color: #5a5a5a;
-    font-size: 1rem;
-    letter-spacing: 1.8px;
+    color: #1f1f1f;
+    font-size: 0.98rem;
+    letter-spacing: 2.2px;
     transition: color 0.3s ease;
-    font-weight: 500;
+    font-weight: 600;
     text-transform: uppercase;
     font-family: 'Playfair Display', 'Lato', sans-serif;
-    padding-bottom: 0.35rem;
+    padding-bottom: 0.4rem;
     border-bottom: 2px solid transparent;
+    text-underline-offset: 6px;
 }
 
 .nav-link:hover,
@@ -91,8 +94,8 @@ nav {
 }
 /* Main Content */
 main {
-    margin-top: 170px;
-    padding: 3.5rem 3rem 4rem;
+    margin-top: 190px;
+    padding: 3.8rem 3.2rem 4.2rem;
     background-color: #ffffff;
 }
 
@@ -117,7 +120,7 @@ main {
 }
 .gallery-grid {
     column-count: 3;
-    column-gap: 50px;
+    column-gap: 56px;
     max-width: 1600px;
     margin: 0 auto;
 }
@@ -127,7 +130,7 @@ main {
     overflow: hidden;
     cursor: pointer;
     break-inside: avoid;
-    margin-bottom: 42px;
+    margin-bottom: 48px;
 }
 
 .gallery-item img {
@@ -259,12 +262,12 @@ main {
 }
 @media (max-width: 768px) {
     header {
-        padding: 1.35rem 0 0.7rem;
+        padding: 1.45rem 0 0.75rem;
     }
 
     .logo h1 {
-        font-size: 1.4rem;
-        margin-bottom: 0.8rem;
+        font-size: 1.45rem;
+        margin-bottom: 0.85rem;
     }
 
     .nav-menu {
@@ -274,31 +277,31 @@ main {
         background-color: transparent;
         width: 100%;
         text-align: left;
-        padding: 0.35rem 1.1rem 0.5rem;
+        padding: 0.45rem 1.1rem 0.6rem;
         border-top: 1px solid #f0f0f0;
-        gap: 1.05rem;
+        gap: 1.15rem;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
         scrollbar-width: none;
         mask-image: linear-gradient(90deg, transparent 0%, #000 12%, #000 88%, transparent 100%);
         -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 12%, #000 88%, transparent 100%);
-        margin-bottom: 0.4rem;
+        margin-bottom: 0.9rem;
     }
 
     .nav-menu::-webkit-scrollbar { display: none; }
 
     .gallery-grid {
         column-count: 2;
-        column-gap: 26px;
+        column-gap: 24px;
     }
 
     .gallery-item {
-        margin-bottom: 32px;
+        margin-bottom: 34px;
     }
 
     main {
-        padding: 1.6rem 1.15rem 2.3rem;
-        margin-top: 120px;
+        padding: 1.8rem 1.2rem 2.5rem;
+        margin-top: 130px;
     }
 }
 
@@ -313,10 +316,10 @@ main {
     }
 
     .gallery-item {
-        margin-bottom: 26px;
+        margin-bottom: 28px;
     }
 
     main {
-        padding: 1.35rem 0.95rem 1.9rem;
+        padding: 1.45rem 1rem 2rem;
     }
 }
