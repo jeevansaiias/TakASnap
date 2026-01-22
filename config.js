@@ -24,7 +24,8 @@ const portfolioConfig = {
                 { src: 'images/landscapes/0B0E78A1-8943-4F43-8489-DF7F358C3AFF_1_102_o.jpeg', title: 'LANDSCAPE' },
                 { src: 'images/landscapes/34579E0B-2CB5-4C3A-B9FD-FF3E57FAE196_1_102_o.jpeg', title: 'LANDSCAPE' },
                 { src: 'images/landscapes/8DB0D16A-FEFF-477D-B648-61696FE1DD24_1_201_a.jpeg', title: 'LANDSCAPE' },
-                { src: 'images/landscapes/DSC02881.jpeg', title: 'LANDSCAPE' }
+                { src: 'images/landscapes/DSC02881.jpeg', title: 'LANDSCAPE' },
+                { src: 'images/landscapes/DSC01941.jpeg', title: 'BANFF VALLEY' }
             ]
         },
         companions: {
