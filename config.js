@@ -13,6 +13,7 @@ const portfolioConfig = {
             name: "FEATURED",
             active: true,
             images: [
+                { src: 'images/web/featured/0.jpeg', title: 'FEATURED' },
                 { src: 'images/web/featured/0B0E78A1-8943-4F43-8489-DF7F358C3AFF_1_102_o.jpeg', title: 'FEATURED' },
                 { src: 'images/web/featured/8DB0D16A-FEFF-477D-B648-61696FE1DD24_1_201_a.jpeg', title: 'FEATURED' }
             ]
