@@ -242,17 +242,17 @@ main {
 
 .about-credit {
     margin-top: 2.6rem;
-    font-size: 1.05rem;
-    letter-spacing: 0.5px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
     text-transform: none;
     color: #2f3032;
-    font-weight: 400;
+    font-weight: 300;
     font-family: 'Lato', sans-serif;
 }
 
 .about-credit span {
-    font-family: 'Playfair Display', serif;
-    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
     letter-spacing: 1px;
 }
 
