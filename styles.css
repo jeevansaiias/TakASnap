@@ -154,10 +154,6 @@ main {
     cursor: pointer;
     break-inside: avoid;
     margin-bottom: 50px;
-    opacity: 0;
-    transform: translateY(24px);
-    transition: opacity 0.45s ease, transform 0.45s ease;
-    transition-delay: var(--stagger, 0ms);
 }
 
 .gallery-item img {
@@ -169,11 +165,6 @@ main {
 
 .gallery-item:hover img {
     transform: scale(1.05);
-}
-
-.gallery-item.in-view {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 .overlay {
@@ -349,14 +340,6 @@ main {
 
     main {
         padding: 2rem 1rem;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .gallery-item {
-        opacity: 1 !important;
-        transform: none !important;
-        transition: none !important;
     }
 }
 
