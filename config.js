@@ -56,6 +56,8 @@ const portfolioConfig = {
                 { src: 'images/web/nature/0.jpeg', title: 'NATURE' },
                 { src: 'images/web/nature/0A.jpeg', title: 'NATURE' },
                 { src: 'images/web/nature/0B.jpeg', title: 'NATURE' },
+                { src: 'images/web/nature/8AF43927-8134-4B85-8DDC-1CE2D53404BA_1_201_a.jpeg', title: 'NATURE' },
+                { src: 'images/web/nature/B780CFB4-515B-4D59-A9BC-6097BFA7F571_1_201_a.jpeg', title: 'NATURE' },
                 { src: 'images/web/nature/1DF33737-C643-4EEB-80E3-357C227DDB85_1_201_a.jpeg', title: 'NATURE' },
                 { src: 'images/web/nature/1A68CCE5-1B51-40E5-9636-41166CB3DCA9_1_201_a.jpeg', title: 'NATURE' },
                 { src: 'images/web/nature/7E0F3A48-D4D6-48A1-970A-C8BC916853C4_1_201_a.jpeg', title: 'NATURE' },
