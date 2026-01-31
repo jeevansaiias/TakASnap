@@ -19,10 +19,6 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     min-height: 100vh;
-    padding-top: 0;
-}
-
-body.featured-page {
     padding-top: 220px;
 }
 
@@ -425,7 +421,7 @@ main {
     }
 
     body {
-        padding-top: 0;
+        padding-top: 200px;
     }
 
     .gallery-grid {
@@ -490,7 +486,7 @@ main {
     }
 
     body {
-        padding-top: 0;
+        padding-top: 190px;
     }
 }
 
@@ -511,7 +507,7 @@ main {
     }
 
     .logo {
-        top: -30px;
+        top: -34px;
         margin-left: -0.9rem;
         margin-right: 0.9rem;
     }
@@ -531,7 +527,7 @@ main {
     }
 
     body {
-        padding-top: 0;
+        padding-top: 170px;
     }
 }
 
