@@ -14,7 +14,9 @@
     <header>
         <nav>
             <div class="logo">
-                <a href="index.html"><h1>TakASnap</h1></a>
+                <a href="index.html">
+                    <img src="images/Logo/logo-circle.png" alt="TakASnap logo" class="logo-mark">
+                </a>
             </div>
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">FEATURED</a></li>
@@ -65,6 +67,18 @@
                 </div>
             </div>
         </section>
-    </main>
+</main>
+<script>
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  window.scrollTo(0, 0);
+  window.addEventListener('load', () => {
+    const header = document.querySelector('header');
+    if (header) {
+      const offset = header.getBoundingClientRect().height + 20;
+      document.body.style.paddingTop = `${offset}px`;
+    }
+    window.scrollTo(0, 0);
+  });
+</script>
 </body>
 </html>
