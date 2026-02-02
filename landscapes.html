@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landscapes - TakASnap</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Lato:wght@300;400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- Header with Navigation -->
     <header>
@@ -27,7 +31,8 @@
                 <li><a href="portraits.html" class="nav-link">PORTRAITS</a></li>
                 <li><a href="about.html" class="nav-link">ABOUT</a></li>
             </ul>
-            <div class="nav-hint" aria-hidden="true"><span class="chevron">⬅︎</span> swipe <span class="chevron">➡︎</span></div>
+            <div class="nav-hint" aria-hidden="true"><span class="chevron">⬅︎</span> swipe <span
+                    class="chevron">➡︎</span></div>
         </nav>
     </header>
 
@@ -79,18 +84,38 @@
                 </div>
             </div>
         </section>
-</main>
-<script>
-  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
-  window.scrollTo(0, 0);
-  window.addEventListener('load', () => {
-    const header = document.querySelector('header');
-    if (header) {
-      const offset = header.getBoundingClientRect().height + 20;
-      document.body.style.paddingTop = `${offset}px`;
-    }
-    window.scrollTo(0, 0);
-  });
-</script>
+    </main>
+    <script>
+        if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+        window.scrollTo(0, 0);
+        const updatePadding = () => {
+            const header = document.querySelector('header');
+            if (header) {
+                const offset = header.getBoundingClientRect().height + 20;
+                document.body.style.paddingTop = `${offset}px`;
+            }
+        };
+
+        if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+
+        // Initial set and listeners
+        window.addEventListener('load', updatePadding);
+        window.addEventListener('resize', updatePadding);
+
+        // Observe header resize
+        const header = document.querySelector('header');
+        if (header && window.ResizeObserver) {
+            const observer = new ResizeObserver(updatePadding);
+            observer.observe(header);
+        }
+
+        // Immediate check
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', updatePadding);
+        } else {
+            updatePadding();
+        }
+    </script>
 </body>
+
 </html>
