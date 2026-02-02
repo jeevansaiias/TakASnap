@@ -167,7 +167,7 @@ nav {
 /* Main Content */
 main {
     margin-top: 0;
-    padding: 4rem 4rem;
+    padding: 4rem 32px;
     background-color: #ffffff;
 }
 
@@ -194,8 +194,10 @@ main {
 
 .gallery-grid {
     column-count: 3;
-    column-gap: 50px;
-    max-width: 1600px;
+    column-gap: 32px;
+    width: 100%;
+    max-width: 1500px;
+    padding: 0 32px;
     margin: 0 auto;
 }
 
@@ -204,7 +206,7 @@ main {
     overflow: hidden;
     cursor: pointer;
     break-inside: avoid;
-    margin-bottom: 50px;
+    margin-bottom: 32px;
 }
 
 .gallery-item img {
@@ -416,41 +418,45 @@ main {
     }
 
     header {
-        height: 180px;
-        padding: 1rem 0 0.7rem;
-    }
-
-    body {
-        padding-top: 200px;
+        height: auto;
+        padding: 1rem 0 1rem;
     }
 
     .gallery-grid {
         column-count: 2;
-        column-gap: 40px;
+        column-gap: 26px;
+        width: 100%;
+        padding: 0 26px;
+    }
+
+    .gallery-item {
+        margin-bottom: 28px;
     }
 }
 
 @media (max-width: 768px) {
     header {
-        height: 170px;
-        padding: 0.8rem 0 0.6rem;
+        height: auto;
+        padding: 0.5rem 0 0.5rem;
     }
 
     nav {
+        flex-direction: column;
+        align-items: center;
         padding: 0 1.2rem;
-        gap: 1.2rem;
-        flex-wrap: wrap;
+        gap: 0;
     }
 
     .logo {
-        margin-left: -1.4rem;
-        margin-right: 1.4rem;
-        top: -30px;
+        margin: 0;
+        margin-top: -70px;
+        margin-bottom: 2.5rem;
+        top: 0;
     }
 
     .logo img {
-        height: 170px;
-        width: 170px;
+        height: 200px;
+        width: 200px;
     }
 
     .brand-title {
@@ -469,11 +475,11 @@ main {
         background-color: transparent;
         width: 100%;
         text-align: center;
-        padding: 1rem 1.25rem 0.85rem;
-        border-top: 1px solid #f0f0f0;
-        gap: 0.9rem 1.4rem;
-        margin-top: 1.1rem;
-        margin-bottom: 1.3rem;
+        padding: 0.2rem 0 0;
+        border-top: none;
+        gap: 0.7rem 1rem;
+        margin-top: 0;
+        margin-bottom: 1.5rem;
     }
 
     .nav-menu::-webkit-scrollbar {
@@ -482,34 +488,57 @@ main {
 
     .gallery-grid {
         column-count: 1;
-        column-gap: 24px;
+        column-gap: 22px;
+        width: 100%;
+        padding: 0 22px;
+    }
+
+    .gallery-item {
+        margin-bottom: 22px;
+    }
+
+    main {
+        padding: 1.4rem 22px 2rem;
     }
 
     body {
-        padding-top: 190px;
+        padding-top: 280px;
     }
 }
 
 @media (max-width: 480px) {
     header {
-        height: 150px;
-        padding: 0.7rem 0 0.55rem;
+        height: auto;
+        padding: 0.5rem 0 0.5rem;
     }
+
     nav {
-        padding: 0 1rem;
-        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+        gap: 0;
         flex-wrap: wrap;
+        margin-top: 0;
     }
 
     .logo img {
-        height: 150px;
-        width: 150px;
+        height: 200px;
+        width: 200px;
     }
 
     .logo {
-        top: -34px;
-        margin-left: -0.9rem;
-        margin-right: 0.9rem;
+        top: 0;
+        margin: 0;
+        margin-top: -70px;
+        margin-bottom: 2.5rem;
+        align-self: center;
+    }
+
+    .nav-menu {
+        gap: 0.4rem 0.7rem;
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+        padding: 0;
     }
 
     .brand-title {
@@ -523,11 +552,20 @@ main {
 
     .gallery-grid {
         column-count: 1;
-        column-gap: 20px;
+        column-gap: 14px;
+        padding: 0 14px;
+    }
+
+    .gallery-item {
+        margin-bottom: 14px;
+    }
+
+    main {
+        padding: 1.15rem 14px 1.6rem;
     }
 
     body {
-        padding-top: 170px;
+        padding-top: 280px;
     }
 }
 
