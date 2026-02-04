@@ -124,12 +124,14 @@ nav {
 }
 
 .nav-link:hover,
-.nav-link:focus-visible {
+.nav-link:focus-visible,
+.nav-link.active {
     color: #27292B;
     background-color: rgba(39, 41, 43, 0.07);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
     transform: translateY(-1px);
     text-decoration: none;
+    font-weight: 600;
 }
 
 .nav-hint {
@@ -449,8 +451,8 @@ main {
 
     .logo {
         margin: 0;
-        margin-top: -70px;
-        margin-bottom: 2.5rem;
+        margin-top: -20px;
+        margin-bottom: 1.5rem;
         top: 0;
     }
 
@@ -529,8 +531,8 @@ main {
     .logo {
         top: 0;
         margin: 0;
-        margin-top: -70px;
-        margin-bottom: 2.5rem;
+        margin-top: -20px;
+        margin-bottom: 1.5rem;
         align-self: center;
     }
 
