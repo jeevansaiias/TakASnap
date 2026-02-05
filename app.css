@@ -451,8 +451,8 @@ main {
 
     .logo {
         margin: 0;
-        margin-top: -20px;
-        margin-bottom: 1.5rem;
+        margin-top: 0;
+        margin-bottom: 3rem;
         top: 0;
     }
 
@@ -511,7 +511,7 @@ main {
 @media (max-width: 480px) {
     header {
         height: auto;
-        padding: 0.5rem 0 0.5rem;
+        padding: 0 0 0.5rem;
     }
 
     nav {
@@ -531,8 +531,11 @@ main {
     .logo {
         top: 0;
         margin: 0;
-        margin-top: -20px;
-        margin-bottom: 1.5rem;
+        margin-top: -2rem;
+        /* Eat internal image whitespace */
+        margin-bottom: 2rem;
+        margin-left: -5px;
+        /* Visual centering nudge */
         align-self: center;
     }
 
