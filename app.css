@@ -531,10 +531,10 @@ main {
     .logo {
         top: 0;
         margin: 0;
-        margin-top: -2.6rem;
+        margin-top: -3.2rem;
         /* Eat internal image whitespace */
-        margin-bottom: 2rem;
-        margin-left: -24px;
+        margin-bottom: 2.4rem;
+        margin-left: -30px;
         /* Visual centering nudge */
         align-self: center;
     }
