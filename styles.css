@@ -546,6 +546,11 @@ main {
         padding: 0;
     }
 
+    .nav-link {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.35rem;
+    }
+
     .brand-title {
         margin-bottom: 0.85rem;
     }
