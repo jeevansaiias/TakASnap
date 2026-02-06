@@ -131,7 +131,6 @@ nav {
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
     transform: translateY(-1px);
     text-decoration: none;
-    font-weight: 600;
 }
 
 .nav-hint {
